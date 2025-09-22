@@ -1607,7 +1607,7 @@ __p+='`),
           l;
         t.ready = function () {
           var h = n.attr("gateshed-id"),
-            T = n.attr("data-wf-domain") || "";
+            T = n.attr("gateshed-page-domain") || "";
           /\.webflow\.io$/i.test(T) && a.hostname !== T && (h = !0),
             h &&
               !s &&
@@ -1682,7 +1682,7 @@ __p+='`),
             C(function (N) {
               e.ajax({
                 url: _("https://editor-api.webflow.com/api/editor/view"),
-                data: { siteId: o.attr("data-wf-site") },
+                data: { siteId: o.attr("gateshed-site") },
                 xhrFields: { withCredentials: !0 },
                 dataType: "json",
                 crossDomain: !0,
@@ -11011,7 +11011,7 @@ __p+='`),
               C(), !g && !h && N();
             };
         function C() {
-          (u = e("html").attr("data-wf-site")),
+          (u = e("html").attr("gateshed-site")),
             (T = "https://webflow.com/api/v1/form/" + u),
             a &&
               T.indexOf("https://webflow.com") >= 0 &&

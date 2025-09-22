@@ -3998,6 +3998,8 @@ blockquote {
 .features {
       background-color: #d1d0f767;
   backdrop-filter: blur(60px);
+  position: relative;
+  height: auto;
 }
 .relative.hero {
   justify-content: center;
